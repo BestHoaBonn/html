@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Định University</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+        header {
+            background: #0c2d59;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        header nav a:hover { text-decoration: underline; }
+
+        /* Banner */
+        .banner {
+            background: url('https://via.placeholder.com/1200x400/004aad/ffffff?text=Banner+Tuyển+Sinh') no-repeat center/cover;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+        .banner h1 { color: yellow; font-size: 40px; margin-bottom: 20px; }
+        .banner .btn {
+            background: red; color: white; padding: 12px 25px;
+            border: none; border-radius: 5px; font-size: 18px;
+            font-weight: bold; cursor: pointer;
+        }
+
+        /* Highlights */
+        .highlights {
+            display: flex; justify-content: space-around;
+            background: #0c2d59; color: white; padding: 20px;
+            text-align: center;
+        }
+        .highlights div { width: 30%; }
+
+        /* Info Circles */
+        .info-section {
+            display: flex; justify-content: space-around;
+            padding: 40px 20px; background: #f4f4f4;
+        }
+        .info-box {
+            background: yellow; color: #0c2d59; font-weight: bold;
+            width: 30%; text-align: center; padding: 40px 20px;
+            border-radius: 50%; font-size: 20px;
+        }
+
+        /* Activities */
+        .activities { padding: 40px; background: white; }
+        .activities h2 { text-align: center; color: #0c2d59; }
+        .grid {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            gap: 20px; margin-top: 20px;
+        }
+        .card img { width: 100%; border-radius: 8px; }
+        .card { background: #f4f4f4; border-radius: 8px; overflow: hidden; }
+
+        /* Journal */
+        .journal {
+            background: #f9f9f9; padding: 40px;
+            display: flex; justify-content: space-around; gap: 20px;
+        }
+        .journal div img { width: 100%; border-radius: 8px; }
+
+        /* CTA */
+        .cta {
+            text-align: center; padding: 50px;
+            background: #ffe4b2;
+        }
+        .cta button {
+            background: red; color: white; padding: 15px 30px;
+            border: none; border-radius: 30px; font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* News */
+        .news { padding: 40px; background: #f9f9f9; }
+        .news h2 { text-align: center; }
+        .news .grid { grid-template-columns: repeat(4, 1fr); }
+        .news .card img { width: 100%; }
+
+        /* Footer */
+        footer {
+            background: #0c2d59; color: white;
+            padding: 20px; text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="logo">GIA ĐỊNH UNIVERSITY</div>
+    <nav>
+        <a href="#">Tuyển sinh</a>
+        <a href="#">Sau Đại học</a>
+        <a href="#">E-learning</a>
+        <a href="#">Thư viện số</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+</header>
+
+<!-- Banner -->
+<section class="banner">
+    <h1>TUYỂN SINH THẠC SĨ 2024</h1>
+    <button class="btn">Đăng ký ngay</button>
+</section>
+
+<!-- Highlights -->
+<section class="highlights">
+    <div><h3>1000 SUẤT HỌC BỔNG</h3><p>Trị giá hơn 10 tỷ</p></div>
+    <div><h3>HỌC PHÍ TỐT</h3><p>10 - 12 triệu/học kỳ</p></div>
+    <div><h3>ĐÀO TẠO TINH GỌN</h3><p>Thời gian hợp lý</p></div>
+</section>
+
+<!-- Info Circles -->
+<section class="info-section">
+    <div class="info-box">CƠ HỘI VIỆC LÀM</div>
+    <div class="info-box">TUYỂN SINH 2024</div>
+    <div class="info-box">HỌC PHÍ HỌC BỔNG</div>
+</section>
+
+<!-- Activities -->
+<section class="activities">
+    <h2>Hoạt động sinh viên tại GDU</h2>
+    <div class="grid">
+        <div class="card"><img src="https://via.placeholder.com/400x250?text=Hoạt+động+1" alt=""></div>
+        <div class="card"><img src="https://via.placeholder.com/400x250?text=Hoạt+động+2" alt=""></div>
+        <div class="card"><img src="https://via.placeholder.com/400x250?text=Hoạt+động+3" alt=""></div>
+    </div>
+</section>
+
+<!-- Journal -->
+<section class="journal">
+    <div><img src="https://via.placeholder.com/300x200?text=Tạp+chí+Khoa+học" alt=""></div>
+    <div><img src="https://via.placeholder.com/300x200?text=Thông+tin+GDU" alt=""></div>
+    <div><img src="https://via.placeholder.com/300x200?text=Sinh+viên+GDU" alt=""></div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Vào Gia Định là vào Gia đình</h2>
+    <button>Đăng ký ngay</button>
+</section>
+
+<!-- News -->
+<section class="news">
+    <h2>Tin tức nổi bật</h2>
+    <div class="grid">
+        <div class="card"><img src="https://via.placeholder.com/250x150?text=Tin+1" alt=""></div>
+        <div class="card"><img src="https://via.placeholder.com/250x150?text=Tin+2" alt=""></div>
+        <div class="card"><img src="https://via.placeholder.com/250x150?text=Tin+3" alt=""></div>
+        <div class="card"><img src="https://via.placeholder.com/250x150?text=Tin+4" alt=""></div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Trường Đại học Gia Định - Liên hệ: info@giadinh.edu.vn</p>
+    <p>&copy; 2024 Gia Định University</p>
+</footer>
+</body>
+</html>
