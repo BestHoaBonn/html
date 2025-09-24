@@ -68,7 +68,6 @@
 			</div>
 			<div id="main_menu">
   <div class="box_menu">
-  
     <nav id="menu" class="menu">
       <ul>
         <li class="icon_menu active"><a href="gioi-thieu" title="Giới thiệu chung">Giới thiệu chung</a>
@@ -142,8 +141,6 @@
       </ul>
     </nav>
   </div>
-
-
 </div>
 <div id="menu_mobile">
   <ul>
