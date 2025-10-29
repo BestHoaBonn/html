@@ -17,8 +17,8 @@ const ListProduct = () => {
         console.log(err.message);
       }
     };
-    LayDulieutuBackend(); // Gọi hàm để lấy dữ liệu từ backend khi component được render lần đầu.
-  }, []); // Tham số thứ hai là mảng rỗng, giúp useEffect chỉ chạy một lần khi component được gắn vào DOM.
+    LayDulieutuBackend();
+  }, []);
 
   const navigate = useNavigate();
   return (
